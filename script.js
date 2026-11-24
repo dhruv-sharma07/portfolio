@@ -85,11 +85,10 @@ setInterval(updateClock, 15000);
 function updateNavigation(section) {
   headerLinks.forEach(link => {
     const active = link.hash === `#${section}` || 
-      (link.hash === '#my-story' && ['experience', 'education', 'my-story'].includes(section)) ||
+      (link.hash === '#my-story' && ['experience', 'education', 'my-story', 'certifications'].includes(section)) ||
       (link.hash === '#web-development' && ['nyayabot', 'wardrobe-ai', 'vestiar', 'web-development'].includes(section)) ||
       (link.hash === '#app-development' && ['eduplay', 'app-development'].includes(section)) ||
-      (link.hash === '#ui-ux-design' && section === 'ui-ux-design') ||
-      (link.hash === '#graphic-design' && section === 'graphic-design');
+      (link.hash === '#ui-ux-design' && section === 'ui-ux-design');
     if (active) link.setAttribute('aria-current', roomPages.has(section) ? 'page' : 'location');
     else link.removeAttribute('aria-current');
   });
