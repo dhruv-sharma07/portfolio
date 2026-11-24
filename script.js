@@ -448,3 +448,74 @@ if (document.readyState === 'loading') {
 } else {
   initMagnificationDock();
 }
+
+/* ===================================================================
+   CERTIFICATE LIGHTBOX MODAL CONTROLLER
+   =================================================================== */
+function initCertificateModal() {
+  const modal = document.getElementById('certModal');
+  const backdrop = document.getElementById('certModalBackdrop');
+  const closeBtn = document.getElementById('certModalClose');
+  const modalImg = document.getElementById('modalCertImg');
+  const modalTitle = document.getElementById('modalCertTitle');
+  const modalTag = document.getElementById('modalCertTag');
+  const modalId = document.getElementById('modalCertId');
+  const modalDownload = document.getElementById('modalCertDownload');
+
+  if (!modal) return;
+
+  function openModal(btn) {
+    const src = btn.getAttribute('data-cert-src');
+    const title = btn.getAttribute('data-cert-title') || 'Certificate View';
+    const tag = btn.getAttribute('data-cert-tag') || 'Verification';
+    const id = btn.getAttribute('data-cert-id') || '';
+
+    if (!src) return;
+
+    modalImg.src = src;
+    modalImg.alt = title;
+    modalTitle.textContent = title;
+    modalTag.textContent = tag;
+    modalId.textContent = id;
+    modalDownload.href = src;
+    modalDownload.download = title.replace(/[^a-zA-Z0-9_-]/g, '_') + '.jpg';
+
+    modal.classList.add('active');
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal() {
+    modal.classList.remove('active');
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    setTimeout(() => {
+      if (!modal.classList.contains('active')) {
+        modalImg.src = '';
+      }
+    }, 250);
+  }
+
+  document.querySelectorAll('.cert-view-btn[data-cert-src]').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      openModal(btn);
+    });
+  });
+
+  if (closeBtn) closeBtn.addEventListener('click', closeModal);
+  if (backdrop) backdrop.addEventListener('click', closeModal);
+
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.classList.contains('active')) {
+      closeModal();
+    }
+  });
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initCertificateModal);
+} else {
+  initCertificateModal();
+}
+
