@@ -1,0 +1,375 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R /F2 5 0 R /F3 6 0 R >> >> /Contents 7 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Oblique >>
+endobj
+7 0 obj
+<< /Length 6162 >>
+stream
+0.060 0.090 0.160 rg
+BT
+/F2 22 Tf
+50.00 745.00 Td
+(DHRUV SHARMA) Tj
+ET
+0.950 0.650 0.240 rg
+BT
+/F2 11 Tf
+50.00 727.00 Td
+(Full-Stack Developer & AI Solutions Engineer) Tj
+ET
+0.400 0.450 0.550 rg
+BT
+/F1 9 Tf
+50.00 711.00 Td
+(dhruvsharma71105@gmail.com  |  linkedin.com/in/dhruv-sharma07  |  github.com/dhruv-sharma07  |  India) Tj
+ET
+0.850 0.870 0.920 RG
+1.2 w
+50.00 701.00 m 562.00 701.00 l S
+0.100 0.150 0.250 rg
+BT
+/F2 11 Tf
+50.00 680.00 Td
+(PROFESSIONAL SUMMARY) Tj
+ET
+0.420 0.550 1.000 RG
+1.5 w
+50.00 676.00 m 562.00 676.00 l S
+0.200 0.250 0.300 rg
+BT
+/F1 9.5 Tf
+50.00 662.00 Td
+(Dynamic Full-Stack Developer & AI Engineer with expertise in building scalable web architectures,) Tj
+ET
+0.200 0.250 0.300 rg
+BT
+/F1 9.5 Tf
+50.00 648.00 Td
+(production LLM workflows, and human-centric intelligent applications. Proven track record in developing) Tj
+ET
+0.200 0.250 0.300 rg
+BT
+/F1 9.5 Tf
+50.00 634.00 Td
+(India's AI Legal Advisor \(NyayaBot\), autonomous agent pipelines, and high-performance reactive web apps.) Tj
+ET
+0.100 0.150 0.250 rg
+BT
+/F2 11 Tf
+50.00 612.00 Td
+(TECHNICAL SKILLS) Tj
+ET
+0.420 0.550 1.000 RG
+1.5 w
+50.00 608.00 m 562.00 608.00 l S
+0.100 0.150 0.250 rg
+BT
+/F2 9.5 Tf
+50.00 594.00 Td
+(Languages:) Tj
+ET
+0.250 0.300 0.350 rg
+BT
+/F1 9.5 Tf
+160.00 594.00 Td
+(Python, TypeScript, JavaScript, C++, SQL \(PostgreSQL, SQLite\), HTML5, CSS3) Tj
+ET
+0.100 0.150 0.250 rg
+BT
+/F2 9.5 Tf
+50.00 580.00 Td
+(AI / ML & LLMs:) Tj
+ET
+0.250 0.300 0.350 rg
+BT
+/F1 9.5 Tf
+160.00 580.00 Td
+(Agentic AI, LLM Pipelines, RAG Architectures, LangChain, PyTorch, OpenAI API, Prompt Eng.) Tj
+ET
+0.100 0.150 0.250 rg
+BT
+/F2 9.5 Tf
+50.00 566.00 Td
+(Web Development:) Tj
+ET
+0.250 0.300 0.350 rg
+BT
+/F1 9.5 Tf
+160.00 566.00 Td
+(Next.js, React.js, Node.js, Express, Tailwind CSS, RESTful APIs, State Management) Tj
+ET
+0.100 0.150 0.250 rg
+BT
+/F2 9.5 Tf
+50.00 552.00 Td
+(Databases & Cloud:) Tj
+ET
+0.250 0.300 0.350 rg
+BT
+/F1 9.5 Tf
+160.00 552.00 Td
+(PostgreSQL, Prisma ORM, MongoDB, Redis, Docker, Vercel, Git, GitHub Actions, Linux) Tj
+ET
+0.100 0.150 0.250 rg
+BT
+/F2 11 Tf
+50.00 530.00 Td
+(FEATURED PROJECTS) Tj
+ET
+0.420 0.550 1.000 RG
+1.5 w
+50.00 526.00 m 562.00 526.00 l S
+0.080 0.120 0.200 rg
+BT
+/F2 10.5 Tf
+50.00 512.00 Td
+(NyayaBot -- India's AI Legal Advisor) Tj
+ET
+0.450 0.500 0.600 rg
+BT
+/F1 9 Tf
+480.00 512.00 Td
+(2024 - Present) Tj
+ET
+0.400 0.450 0.550 rg
+BT
+/F3 9 Tf
+50.00 499.00 Td
+(Tech Stack: Python, AI/NLP, Multi-Act Vector Search, FastAPI) Tj
+ET
+0.950 0.650 0.240 rg
+BT
+/F1 8 Tf
+60.00 486.00 Td
+([*]) Tj
+ET
+0.200 0.250 0.300 rg
+BT
+/F1 9.2 Tf
+75.00 486.00 Td
+(Engineered a zero-config AI advisor bridging legal accessibility across IPC, CrPC, BNS 2024, and 200+ Indian Acts.) Tj
+ET
+0.950 0.650 0.240 rg
+BT
+/F1 8 Tf
+60.00 473.00 Td
+([*]) Tj
+ET
+0.200 0.250 0.300 rg
+BT
+/F1 9.2 Tf
+75.00 473.00 Td
+(Implemented hybrid semantic retrieval and contextual RAG with citations, delivering reliable legal summaries.) Tj
+ET
+0.950 0.650 0.240 rg
+BT
+/F1 8 Tf
+60.00 460.00 Td
+([*]) Tj
+ET
+0.200 0.250 0.300 rg
+BT
+/F1 9.2 Tf
+75.00 460.00 Td
+(Designed responsive, lightweight conversational interface reducing legal research turn-around time drastically.) Tj
+ET
+0.080 0.120 0.200 rg
+BT
+/F2 10.5 Tf
+50.00 442.00 Td
+(Wardrobe AI -- Smart Digital Styling & Wardrobe Intelligence) Tj
+ET
+0.450 0.500 0.600 rg
+BT
+/F1 9 Tf
+480.00 442.00 Td
+(2024) Tj
+ET
+0.400 0.450 0.550 rg
+BT
+/F3 9 Tf
+50.00 429.00 Td
+(Tech Stack: Next.js, TypeScript, Tailwind CSS, Prisma, Multimodal AI) Tj
+ET
+0.950 0.650 0.240 rg
+BT
+/F1 8 Tf
+60.00 416.00 Td
+([*]) Tj
+ET
+0.200 0.250 0.300 rg
+BT
+/F1 9.2 Tf
+75.00 416.00 Td
+(Built an intelligent web application providing context-aware outfit recommendations based on weather and events.) Tj
+ET
+0.950 0.650 0.240 rg
+BT
+/F1 8 Tf
+60.00 403.00 Td
+([*]) Tj
+ET
+0.200 0.250 0.300 rg
+BT
+/F1 9.2 Tf
+75.00 403.00 Td
+(Integrated multimodal computer vision pipelines to automatically segment and classify clothing catalog items.) Tj
+ET
+0.950 0.650 0.240 rg
+BT
+/F1 8 Tf
+60.00 390.00 Td
+([*]) Tj
+ET
+0.200 0.250 0.300 rg
+BT
+/F1 9.2 Tf
+75.00 390.00 Td
+(Engineered responsive UI with dark/light themes, smooth transitions, and high-performance server rendering.) Tj
+ET
+0.080 0.120 0.200 rg
+BT
+/F2 10.5 Tf
+50.00 372.00 Td
+(Harbor Click Pipeline -- Benchmark Automation Suite) Tj
+ET
+0.450 0.500 0.600 rg
+BT
+/F1 9 Tf
+480.00 372.00 Td
+(2024) Tj
+ET
+0.400 0.450 0.550 rg
+BT
+/F3 9 Tf
+50.00 359.00 Td
+(Tech Stack: Python, Docker, PyProject, Automation Frameworks) Tj
+ET
+0.950 0.650 0.240 rg
+BT
+/F1 8 Tf
+60.00 346.00 Td
+([*]) Tj
+ET
+0.200 0.250 0.300 rg
+BT
+/F1 9.2 Tf
+75.00 346.00 Td
+(Developed high-throughput data extraction and evaluation pipeline for automated system benchmarking.) Tj
+ET
+0.950 0.650 0.240 rg
+BT
+/F1 8 Tf
+60.00 333.00 Td
+([*]) Tj
+ET
+0.200 0.250 0.300 rg
+BT
+/F1 9.2 Tf
+75.00 333.00 Td
+(Containerized pipeline execution via Docker, enabling reproducible test runs and unified reporting metrics.) Tj
+ET
+0.100 0.150 0.250 rg
+BT
+/F2 11 Tf
+50.00 315.00 Td
+(EDUCATION) Tj
+ET
+0.420 0.550 1.000 RG
+1.5 w
+50.00 311.00 m 562.00 311.00 l S
+0.100 0.150 0.250 rg
+BT
+/F2 10 Tf
+50.00 297.00 Td
+(Bachelor of Technology \(B.Tech\) - Computer Science & Engineering) Tj
+ET
+0.450 0.500 0.600 rg
+BT
+/F1 9 Tf
+480.00 297.00 Td
+(2022 - 2026) Tj
+ET
+0.350 0.400 0.450 rg
+BT
+/F1 9 Tf
+50.00 284.00 Td
+(Core Focus: Distributed Systems, Artificial Intelligence, Scalable Full-Stack Architecture) Tj
+ET
+0.100 0.150 0.250 rg
+BT
+/F2 11 Tf
+50.00 266.00 Td
+(ACHIEVEMENTS & CONTRIBUTIONS) Tj
+ET
+0.420 0.550 1.000 RG
+1.5 w
+50.00 262.00 m 562.00 262.00 l S
+0.420 0.550 1.000 rg
+BT
+/F1 8 Tf
+60.00 248.00 Td
+([*]) Tj
+ET
+0.200 0.250 0.300 rg
+BT
+/F1 9.2 Tf
+75.00 248.00 Td
+(Active Open Source Contributor: Maintained active repositories, multi-agent frameworks, and developer tooling.) Tj
+ET
+0.420 0.550 1.000 rg
+BT
+/F1 8 Tf
+60.00 235.00 Td
+([*]) Tj
+ET
+0.200 0.250 0.300 rg
+BT
+/F1 9.2 Tf
+75.00 235.00 Td
+(500+ Algorithmic & System Challenges solved across competitive programming platforms.) Tj
+ET
+0.420 0.550 1.000 rg
+BT
+/F1 8 Tf
+60.00 222.00 Td
+([*]) Tj
+ET
+0.200 0.250 0.300 rg
+BT
+/F1 9.2 Tf
+75.00 222.00 Td
+(Hackathon Builder: Led end-to-end MVP design and deployment under rapid 24-48 hour delivery cycles.) Tj
+ET
+endstream
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000261 00000 n 
+0000000331 00000 n 
+0000000406 00000 n 
+0000000484 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+6698
+%%EOF
