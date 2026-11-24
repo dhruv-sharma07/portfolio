@@ -1,617 +1,541 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dhruv Sharma | Full-Stack Developer & AI Solutions Engineer</title>
-  <meta name="description" content="Portfolio of Dhruv Sharma — Full-Stack Developer & AI Solutions Engineer shipping Agentic AI, modern web platforms, and intelligent pipelines.">
-  
-  <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23f2a63c'/><text x='50%' y='62%' font-size='50' font-family='sans-serif' font-weight='bold' text-anchor='middle' fill='%230a0e1a'>DS</text></svg>">
-
-  <!-- Google Fonts -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The portfolio of Dhruv Sharma — Full-Stack Developer & AI Engineer. Explore work across Web Development, App Development (Kotlin), UI/UX Design, and Graphic Design.">
+  <title>Dhruv Sharma — Full-Stack Developer & AI Engineer</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%23232c34'/><text x='32' y='42' font-size='26' font-family='sans-serif' text-anchor='middle' fill='%23f7f0e4'>DS</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
-
-  <!-- Font Awesome 6.5.0 -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <!-- Stylesheet -->
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- Top Scroll Progress Bar -->
-  <div id="scrollProgress"></div>
+  <!-- SVG Icon Library -->
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="icon-diagonal" viewBox="0 0 24 24"><path d="M6 18 18 6M7 6h11v11"/></symbol>
+    <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"/></symbol>
+    <symbol id="icon-down" viewBox="0 0 24 24"><path d="M12 4v15m-6-6 6 6 6-6"/></symbol>
+    <symbol id="icon-spark" viewBox="0 0 24 24"><path d="M12 2v20M2 12h20M5 5l14 14M19 5 5 19"/></symbol>
+    <symbol id="icon-menu" viewBox="0 0 24 24"><path d="M4 8h16M4 16h16"/></symbol>
+    <symbol id="icon-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></symbol>
+    <symbol id="icon-pause" viewBox="0 0 24 24"><path d="M9 6v12m6-12v12"/></symbol>
+    <symbol id="icon-play" viewBox="0 0 24 24"><path d="m9 6 10 6-10 6z"/></symbol>
+    <!-- Dock & Nav Icons -->
+    <symbol id="icon-home" viewBox="0 0 24 24"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></symbol>
+    <symbol id="icon-code" viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></symbol>
+    <symbol id="icon-phone" viewBox="0 0 24 24"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></symbol>
+    <symbol id="icon-layout" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><line x1="3" x2="21" y1="9" y2="9"/><line x1="9" x2="9" y1="21" y2="9"/></symbol>
+    <symbol id="icon-brush" viewBox="0 0 24 24"><path d="m9.06 11.9 8.07-8.06a2.85 2.85 0 1 1 4.03 4.03l-8.06 8.08"/><path d="M7.07 14.94c-1.66 0-3 1.35-3 3.02 0 1.33-2.5 1.52-2 2.02 1.08 1.1 2.49 2.02 4 2.02 2.2 0 4-1.8 4-4.04a3.01 3.01 0 0 0-3-3.02z"/></symbol>
+    <symbol id="icon-story" viewBox="0 0 24 24"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10M6 10h10"/></symbol>
+    <symbol id="icon-mail" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+    <symbol id="icon-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></symbol>
+  </svg>
 
-  <!-- Sticky Navbar -->
-  <header class="navbar" id="navbar">
-    <div class="container nav-inner">
-      <a href="#home" class="brand">
-        <div class="brand-badge">DS</div>
-        <span class="brand-name">Dhruv Sharma</span>
-      </a>
-
-      <nav>
-        <ul class="nav-links" id="navLinks">
-          <li><a href="#home" class="nav-link active">Home</a></li>
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#skills" class="nav-link">Skills</a></li>
-          <li><a href="#experience" class="nav-link">Experience</a></li>
-          <li><a href="#projects" class="nav-link">Projects</a></li>
-          <li><a href="#education" class="nav-link">Education</a></li>
-          <li><a href="#credentials" class="nav-link">Credentials</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
+  <!-- Sticky Header with Exact Navbar -->
+  <header class="site-header">
+    <div class="header-inner shell">
+      <a href="#home" class="wordmark" aria-label="Dhruv Sharma, home">DS<span>.</span></a>
+      <nav id="primary-nav" aria-label="Main navigation">
+        <a href="#home" aria-current="page">Home</a>
+        <a href="#web-development">Web Development</a>
+        <a href="#app-development">App Development</a>
+        <a href="#ui-ux-design">UI/UX Design</a>
+        <a href="#graphic-design">Graphic Design</a>
+        <a href="#my-story">My story</a>
+        <a href="#contact">Contact</a>
       </nav>
-
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
-        <i class="fa-solid fa-bars"></i>
-      </button>
+      <div class="header-actions">
+        <!-- Direct Resume Download in Header -->
+        <a class="button button-header-resume mono" href="assets/resume_dhruv_sharma.pdf" download="Dhruv-Sharma-Resume.pdf" title="Download Resume PDF">
+          <svg class="icon" aria-hidden="true"><use href="#icon-down"/></svg>
+          <span>Résumé</span>
+        </a>
+        <span class="header-clock mono"><span class="live-dot"></span> <span id="local-clock">India · IST</span></span>
+        <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-controls="primary-nav" aria-expanded="false" hidden>
+          <svg class="icon" aria-hidden="true"><use href="#icon-menu"/></svg>
+        </button>
+      </div>
     </div>
   </header>
 
-  <main>
+  <!-- Dark / Light Theme Pull Cord -->
+  <button class="theme-pull" type="button" aria-label="Dark mode" aria-pressed="false" title="Pull to change the theme" hidden>
+    <span class="cord" aria-hidden="true"></span>
+    <span class="cord-weight" aria-hidden="true"></span>
+    <span class="theme-caption mono" aria-hidden="true">Pull me</span>
+  </button>
+
+  <main id="main">
     <!-- HERO SECTION -->
-    <section id="home" class="hero">
-      <div class="container hero-grid">
-        <div class="hero-text reveal">
-          <div class="status-pill">
-            <span class="status-dot"></span>
-            <span>Open to AI & Full-Stack roles</span>
+    <section id="home" class="hero" aria-labelledby="hero-title">
+      <div class="hero-inner shell">
+        <div class="hero-copy">
+          <p class="eyebrow hero-eyebrow"><span class="live-dot"></span> Independent developer & designer</p>
+          <h1 id="hero-title">Hi, I’m Dhruv.<br><span>I build for</span></h1>
+          <div class="flipbook">
+            <span class="sr-only">Web Development, Android Apps, AI Systems, and UI/UX</span>
+            <span class="book-back" aria-hidden="true"></span>
+            <span class="book-page" aria-hidden="true"><span id="role-text">Web Development</span></span>
+            <span class="book-rings" aria-hidden="true"></span>
+            <button class="role-toggle" type="button" aria-label="Pause role animation" title="Pause role animation" aria-pressed="false" hidden>
+              <svg class="icon" aria-hidden="true"><use href="#icon-pause"/></svg>
+            </button>
           </div>
-
-          <h1 class="hero-title">
-            Hi, I'm Dhruv.<br>
-            I build systems that<br>
-            <span class="text-accent">reason, scale,</span> and <span class="text-accent">deliver.</span>
-          </h1>
-
-          <p class="hero-sub">
-            Full-Stack Developer & AI Solutions Engineer shipping agentic AI workflows, LLM pipelines, and production-grade web applications — from India's AI Legal Advisor <strong>NyayaBot</strong> to multimodal smart intelligence platforms.
-          </p>
-
-          <div class="hero-cta">
-            <a href="#projects" class="btn btn-primary">
-              <span>View Projects</span>
-              <i class="fa-solid fa-arrow-right"></i>
+          <!-- HERO ACTIONS WITH PROMINENT DOWNLOAD RESUME -->
+          <div class="hero-actions">
+            <!-- 1. Download Resume Button (Prominent & Eye-Catching) -->
+            <a class="button button-resume" href="assets/resume_dhruv_sharma.pdf" download="Dhruv-Sharma-Resume.pdf" aria-label="Download Résumé PDF">
+              <svg class="icon" aria-hidden="true"><use href="#icon-down"/></svg>
+              <span>Download Résumé</span>
             </a>
-            <!-- RESUME DOWNLOAD BUTTON -->
-            <a href="assets/Resume_Dhruv_Sharma.pdf" class="btn btn-secondary" download="Resume_Dhruv_Sharma.pdf" id="downloadResumeBtn">
-              <i class="fa-solid fa-arrow-down"></i>
-              <span>Download Resume</span>
+            <!-- 2. Explore Selected Work / Doors -->
+            <a class="button button-outline" href="#projects">
+              <span>See my work</span>
+              <svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg>
+            </a>
+            <!-- 3. Start a project -->
+            <a class="button button-ghost" href="#contact">
+              <span>Start a project</span>
+              <span class="button-orb"><svg class="icon" aria-hidden="true"><use href="#icon-diagonal"/></svg></span>
             </a>
           </div>
         </div>
-
-        <div class="hero-visual reveal">
-          <div class="hero-photo-frame">
-            <img src="assets/dhruv.jpg" alt="Dhruv Sharma - Full-Stack & AI Engineer">
-            <div class="hero-photo-tag">
-              <span class="feed-tag">NOW</span>
-              <span>Building NyayaBot & Agentic Swarms</span>
-            </div>
-          </div>
-        </div>
+        <figure class="hero-portrait">
+          <img src="assets/dhruv-portrait.webp" alt="Portrait of Dhruv Sharma" width="900" height="900" fetchpriority="high">
+          <figcaption><svg class="icon" aria-hidden="true"><use href="#icon-spark"/></svg> Yep, that’s me.</figcaption>
+        </figure>
+      </div>
+      <div class="hero-strip shell mono">
+        <span><span class="live-dot"></span> Available for work</span>
+        <span>Based in India · Open to remote</span>
+        <a href="#projects">Scroll to explore the doors <svg class="icon" aria-hidden="true"><use href="#icon-down"/></svg></a>
       </div>
     </section>
 
-    <!-- TELEMETRY / STAT COUNTER PANEL -->
-    <section class="telemetry-section">
-      <div class="container">
-        <div class="telemetry-card reveal">
-          <div class="card-topbar">
-            <div class="terminal-dots">
-              <span class="dot dot-red"></span>
-              <span class="dot dot-yellow"></span>
-              <span class="dot dot-green"></span>
-            </div>
-            <div class="terminal-title">dhruv-sharma07 // telemetry_stats.json</div>
-            <div></div>
-          </div>
+    <!-- SELECTED WORK / DOORS SECTION (ALIGNED TO NAVBAR) -->
+    <section id="projects" class="door-section" aria-labelledby="doors-title">
+      <div class="shell door-heading" data-reveal>
+        <p class="eyebrow"><span class="chapter">01</span> Selected disciplines</p>
+        <h2 id="doors-title">Magic happens behind the doors.</h2>
+        <p class="door-instruction" id="door-instruction">Pick a door to explore projects across Web, Mobile (Kotlin), UI/UX, and Graphic Design.</p>
+      </div>
+      <div class="door-stage shell" aria-describedby="door-instruction" data-reveal>
+        <!-- Door 01: Web Development -->
+        <a class="door door-blue" href="#web-development" data-room="web-development" aria-label="Open Web Development">
+          <span class="door-frame" aria-hidden="true">
+            <span class="door-jamb">
+              <span class="door-leaf">
+                <span class="door-plaque">Web<br>Development</span>
+                <span class="door-handle"></span>
+              </span>
+            </span>
+          </span>
+          <span class="door-number mono">01 <svg class="icon" aria-hidden="true"><use href="#icon-diagonal"/></svg></span>
+          <span class="door-note"><strong>Web Development</strong><span>Vestiar AI wardrobe, NyayaBot legal tech & full-stack systems.</span></span>
+        </a>
 
-          <div class="stats-grid">
-            <div class="stat-item">
-              <div class="stat-number" data-target="500" data-suffix="+">0</div>
-              <div class="stat-label">DSA & Code Challenges Solved</div>
-            </div>
-            <div class="stat-item">
-              <div class="stat-number" data-target="3" data-suffix="+">0</div>
-              <div class="stat-label">Flagship Production Projects</div>
-            </div>
-            <div class="stat-item">
-              <div class="stat-number" data-target="200" data-suffix="+">0</div>
-              <div class="stat-label">Indian Legal Acts Indexed</div>
-            </div>
-            <div class="stat-item">
-              <div class="stat-number" data-target="100" data-suffix="%">0</div>
-              <div class="stat-label">Clean Code & System Reliability</div>
-            </div>
-          </div>
+        <!-- Door 02: App Development (Kotlin) -->
+        <a class="door door-lilac" href="#app-development" data-room="app-development" aria-label="Open App Development">
+          <span class="door-frame" aria-hidden="true">
+            <span class="door-jamb">
+              <span class="door-leaf">
+                <span class="door-plaque">App<br>Development</span>
+                <span class="door-handle"></span>
+              </span>
+            </span>
+          </span>
+          <span class="door-number mono">02 <svg class="icon" aria-hidden="true"><use href="#icon-diagonal"/></svg></span>
+          <span class="door-note"><strong>App Development</strong><span>Kotlin Android engineering, EduPlay rural school platform & SQLite.</span></span>
+        </a>
+
+        <!-- Door 03: UI/UX Design -->
+        <a class="door door-sage" href="#ui-ux-design" data-room="ui-ux-design" aria-label="Open UI/UX Design">
+          <span class="door-frame" aria-hidden="true">
+            <span class="door-jamb">
+              <span class="door-leaf">
+                <span class="door-plaque">UI/UX<br>Design</span>
+                <span class="door-handle"></span>
+              </span>
+            </span>
+          </span>
+          <span class="door-number mono">03 <svg class="icon" aria-hidden="true"><use href="#icon-diagonal"/></svg></span>
+          <span class="door-note"><strong>UI/UX Design</strong><span>Human-centric design systems, accessible interfaces & wireframes.</span></span>
+        </a>
+
+        <!-- Door 04: Graphic Design -->
+        <a class="door door-rust" href="#graphic-design" data-room="graphic-design" aria-label="Open Graphic Design">
+          <span class="door-frame" aria-hidden="true">
+            <span class="door-jamb">
+              <span class="door-leaf">
+                <span class="door-plaque">Graphic<br>Design</span>
+                <span class="door-handle"></span>
+              </span>
+            </span>
+          </span>
+          <span class="door-number mono">04 <svg class="icon" aria-hidden="true"><use href="#icon-diagonal"/></svg></span>
+          <span class="door-note"><strong>Graphic Design</strong><span>Visual brand identity, custom vector assets, typography & aesthetics.</span></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- MY STORY SECTION -->
+    <section id="my-story" class="story" aria-labelledby="story-title">
+      <div id="experience"></div>
+      <div class="story-grid shell">
+        <div class="story-heading">
+          <p class="eyebrow"><span class="chapter">02</span> My story</p>
+          <h2 id="story-title">Let’s go back in time.</h2>
+          <div class="story-year" id="story-year" aria-hidden="true">2026</div>
+          <div class="story-progress mono" aria-hidden="true"><span id="story-count">01 / 04</span><span class="story-track"><span></span></span></div>
+        </div>
+        <div class="timeline">
+          <article class="milestone" data-year="2026" data-reveal>
+            <p class="eyebrow">2024 — Present</p>
+            <h3>Lead Architect & AI Engineer</h3>
+            <p class="milestone-sub">NyayaBot · Legal Tech Platform</p>
+            <p>Engineered an AI legal advisor bridging access across 200+ Indian Acts. Designed hybrid vector search and retrieval-augmented generation grounded in statutory law.</p>
+          </article>
+          <article class="milestone" data-year="2025" data-reveal>
+            <p class="eyebrow">2024 — 2025</p>
+            <h3>Android Engineer · Kotlin & SQLite</h3>
+            <p class="milestone-sub">EduPlay · Educational Tech for Rural Schools</p>
+            <p>Built EduPlay from scratch in Kotlin: an offline-first learning application for primary schools (Classes 1–5) featuring gamified learning modules, attendance tracking via SQLite, and child-friendly design.</p>
+          </article>
+          <article class="milestone" data-year="2024" data-reveal>
+            <p class="eyebrow">2023 — Present</p>
+            <h3>Full-Stack & Systems Developer</h3>
+            <p class="milestone-sub">Vestiar & Harbor Open Source</p>
+            <p>Shipped Vestiar / Wardrobe AI using Next.js and Prisma with multimodal vision classification, and automated containerized pipelines with Docker.</p>
+          </article>
+          <article id="education" class="milestone" data-year="2022" data-reveal>
+            <p class="eyebrow">2022 — 2026</p>
+            <h3>B.Tech, Computer Science & Engineering</h3>
+            <p class="milestone-sub">Netaji Subhas University of Technology (NSUT)</p>
+            <p>Focused on distributed systems, mobile application architecture (Kotlin/Android), AI algorithms, and human-centric software design.</p>
+            <details id="credentials" class="credentials">
+              <summary>Certifications & honors</summary>
+              <ul>
+                <li>Autonomous Agents & Generative AI Systems · 2024</li>
+                <li>Full-Stack Modern Web Engineering · 2023</li>
+                <li>500+ Algorithmic Challenges Solved across Competitive Platforms</li>
+              </ul>
+            </details>
+          </article>
         </div>
       </div>
     </section>
 
     <!-- ABOUT SECTION -->
-    <section id="about" class="section">
-      <div class="container">
-        <div class="section-header reveal">
-          <div class="section-index">// 01</div>
-          <h2 class="section-title">About <span>Me</span></h2>
-          <p class="section-subtitle">Bridging complex AI intelligence with intuitive, scalable user interfaces.</p>
-        </div>
-
-        <div class="about-grid">
-          <div class="about-content reveal">
-            <p class="about-lead">
-              I'm an engineer passionate about building high-impact software where cutting-edge artificial intelligence meets delightful, resilient user experiences.
-            </p>
-            <p class="about-text">
-              My core expertise lies in designing end-to-end full-stack architectures (Next.js, TypeScript, PostgreSQL) and infusing them with autonomous AI agents, Retrieval-Augmented Generation (RAG) pipelines, and fast API microservices.
-            </p>
-            <p class="about-text">
-              I believe the most powerful applications are engineered with curiosity, precision, and purpose — transforming tangled real-world challenges (like legal ambiguity or wardrobe styling) into frictionless, automated solutions.
-            </p>
-            <div style="margin-top: 24px;">
-              <a href="assets/Resume_Dhruv_Sharma.pdf" class="btn btn-secondary btn-sm" download="Resume_Dhruv_Sharma.pdf">
-                <i class="fa-solid fa-file-pdf"></i> Download Full Resume
-              </a>
-            </div>
-          </div>
-
-          <div class="about-highlights reveal">
-            <div class="highlight-card">
-              <div class="highlight-icon">
-                <i class="fa-solid fa-robot"></i>
-              </div>
-              <div>
-                <h4 class="highlight-title">Agentic AI & LLMs</h4>
-                <p class="highlight-desc">Autonomous multi-agent swarms, RAG workflows, semantic search, and prompt architecture using modern LLM APIs.</p>
-              </div>
-            </div>
-
-            <div class="highlight-card">
-              <div class="highlight-icon blue">
-                <i class="fa-solid fa-layer-group"></i>
-              </div>
-              <div>
-                <h4 class="highlight-title">Full-Stack Architecture</h4>
-                <p class="highlight-desc">High-throughput reactive web applications with Next.js, React, Tailwind CSS, Prisma, and relational databases.</p>
-              </div>
-            </div>
-
-            <div class="highlight-card">
-              <div class="highlight-icon green">
-                <i class="fa-solid fa-server"></i>
-              </div>
-              <div>
-                <h4 class="highlight-title">DevOps & Scalability</h4>
-                <p class="highlight-desc">Containerization with Docker, automated CI/CD pipelines, cloud deployment on Vercel, and robust Linux workflows.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SKILLS SECTION -->
-    <section id="skills" class="section">
-      <div class="container">
-        <div class="section-header reveal">
-          <div class="section-index">// 02</div>
-          <h2 class="section-title">Skills & <span>Arsenal</span></h2>
-          <p class="section-subtitle">The battle-tested technologies, frameworks, and tools I use to ship production systems.</p>
-        </div>
-
-        <div class="skills-grid">
-          <!-- Category 1 -->
-          <div class="skill-category reveal">
-            <div class="category-header">
-              <div class="category-icon"><i class="fa-solid fa-brain"></i></div>
-              <h3 class="category-title">AI, Machine Learning & LLMs</h3>
-            </div>
-            <div class="tags-list">
-              <span class="tag">Agentic AI</span>
-              <span class="tag">LLM Pipelines</span>
-              <span class="tag">RAG Architectures</span>
-              <span class="tag">Vector Databases</span>
-              <span class="tag">LangChain</span>
-              <span class="tag">PyTorch</span>
-              <span class="tag">OpenAI API</span>
-              <span class="tag">Scikit-Learn</span>
-              <span class="tag">Prompt Engineering</span>
-              <span class="tag">Pandas & NumPy</span>
-            </div>
-          </div>
-
-          <!-- Category 2 -->
-          <div class="skill-category reveal">
-            <div class="category-header">
-              <div class="category-icon"><i class="fa-solid fa-code"></i></div>
-              <h3 class="category-title">Web & Full-Stack Development</h3>
-            </div>
-            <div class="tags-list">
-              <span class="tag">TypeScript</span>
-              <span class="tag">JavaScript (ES6+)</span>
-              <span class="tag">Next.js</span>
-              <span class="tag">React.js</span>
-              <span class="tag">Node.js</span>
-              <span class="tag">Express</span>
-              <span class="tag">Tailwind CSS</span>
-              <span class="tag">HTML5 / CSS3</span>
-              <span class="tag">RESTful APIs</span>
-            </div>
-          </div>
-
-          <!-- Category 3 -->
-          <div class="skill-category reveal">
-            <div class="category-header">
-              <div class="category-icon"><i class="fa-solid fa-database"></i></div>
-              <h3 class="category-title">Databases & Cloud</h3>
-            </div>
-            <div class="tags-list">
-              <span class="tag">PostgreSQL</span>
-              <span class="tag">Prisma ORM</span>
-              <span class="tag">MongoDB</span>
-              <span class="tag">Redis</span>
-              <span class="tag">SQLite</span>
-              <span class="tag">Docker</span>
-              <span class="tag">Vercel</span>
-            </div>
-          </div>
-
-          <!-- Category 4 -->
-          <div class="skill-category reveal">
-            <div class="category-header">
-              <div class="category-icon"><i class="fa-solid fa-wrench"></i></div>
-              <h3 class="category-title">Languages & Developer Tools</h3>
-            </div>
-            <div class="tags-list">
-              <span class="tag">Python</span>
-              <span class="tag">C / C++</span>
-              <span class="tag">Git & GitHub</span>
-              <span class="tag">GitHub Actions</span>
-              <span class="tag">Linux</span>
-              <span class="tag">VS Code</span>
-              <span class="tag">Postman</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Tool Cards Strip -->
-        <div class="tools-grid reveal">
-          <div class="tool-card">
-            <i class="fa-brands fa-python"></i>
-            <span class="tool-name">Python</span>
-          </div>
-          <div class="tool-card">
-            <i class="fa-brands fa-react"></i>
-            <span class="tool-name">React / Next</span>
-          </div>
-          <div class="tool-card">
-            <i class="fa-brands fa-node-js"></i>
-            <span class="tool-name">Node.js</span>
-          </div>
-          <div class="tool-card">
-            <i class="fa-brands fa-docker"></i>
-            <span class="tool-name">Docker</span>
-          </div>
-          <div class="tool-card">
-            <i class="fa-brands fa-git-alt"></i>
-            <span class="tool-name">Git</span>
-          </div>
-          <div class="tool-card">
-            <i class="fa-brands fa-linux"></i>
-            <span class="tool-name">Linux</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- EXPERIENCE SECTION -->
-    <section id="experience" class="section">
-      <div class="container">
-        <div class="section-header reveal">
-          <div class="section-index">// 03</div>
-          <h2 class="section-title">Experience & <span>Milestones</span></h2>
-          <p class="section-subtitle">Real-world applications, engineering leadership, and high-impact initiatives.</p>
-        </div>
-
-        <div class="timeline">
-          <!-- Timeline Item 1 -->
-          <div class="timeline-item reveal">
-            <div class="timeline-marker"></div>
-            <div class="timeline-card">
-              <div class="timeline-top">
-                <h3 class="role-title">Lead Architect & AI Engineer</h3>
-                <span class="role-period">2024 – PRESENT</span>
-              </div>
-              <div class="company-name">NyayaBot Project · Legal-Tech Initiative</div>
-              <ul class="role-bullets">
-                <li>Engineered India's AI Legal Advisor providing instant, citizen-accessible legal guidance across 200+ Indian Acts including IPC, CrPC, and Bharatiya Nyaya Sanhita (BNS 2024).</li>
-                <li>Designed hybrid contextual vector search and Retrieval-Augmented Generation (RAG) system with precision verification against statute sections.</li>
-                <li>Built intuitive web-based interface ensuring sub-second latency and zero-configuration barrier to entry.</li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Timeline Item 2 -->
-          <div class="timeline-item reveal">
-            <div class="timeline-marker"></div>
-            <div class="timeline-card">
-              <div class="timeline-top">
-                <h3 class="role-title">Full-Stack & Systems Developer</h3>
-                <span class="role-period">2023 – PRESENT</span>
-              </div>
-              <div class="company-name">Independent & Open Source Development</div>
-              <ul class="role-bullets">
-                <li>Shipped Wardrobe AI, integrating computer vision classification with personalized LLM style recommendations using Next.js and Prisma.</li>
-                <li>Automated high-throughput task benchmarking and evaluation workflows with Docker containerization in Harbor Click Pipeline.</li>
-                <li>Actively maintained open source developer repositories, workflow automations, and modern TypeScript architectures.</li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Timeline Item 3 -->
-          <div class="timeline-item reveal">
-            <div class="timeline-marker"></div>
-            <div class="timeline-card">
-              <div class="timeline-top">
-                <h3 class="role-title">Competitive Problem Solving & Hackathons</h3>
-                <span class="role-period">2022 – 2024</span>
-              </div>
-              <div class="company-name">Algorithmic Engineering & Rapid Prototyping</div>
-              <ul class="role-bullets">
-                <li>Solved 500+ complex algorithmic challenges in Data Structures & Algorithms across competitive coding platforms.</li>
-                <li>Collaborated in fast-paced hackathons, leading full-stack MVP architecture, API integration, and cloud deployment under strict timeframes.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROJECTS SECTION -->
-    <section id="projects" class="section">
-      <div class="container">
-        <div class="section-header reveal">
-          <div class="section-index">// 04</div>
-          <h2 class="section-title">Featured <span>Projects</span></h2>
-          <p class="section-subtitle">A curated selection of intelligent systems, full-stack platforms, and developer tooling.</p>
-        </div>
-
-        <div class="projects-grid">
-          <!-- Project 1: NyayaBot -->
-          <div class="project-card reveal">
-            <div class="project-banner">
-              <span class="project-banner-badge">🟢 Active</span>
-              <i class="fa-solid fa-scale-balanced project-icon-large"></i>
-            </div>
-            <div class="project-body">
-              <div class="project-header">
-                <h3 class="project-title">NyayaBot</h3>
-                <div class="project-links">
-                  <a href="https://github.com/dhruv-sharma07/NyayaBot" target="_blank" rel="noopener noreferrer" class="project-link-btn" title="View Source on GitHub">
-                    <i class="fa-brands fa-github"></i>
-                  </a>
-                </div>
-              </div>
-              <p class="project-desc">
-                India's AI Legal Advisor — Zero-config advisor bridging legal accessibility across IPC, CrPC, BNS 2024 & 200+ Indian Acts with contextual multi-act vector citations.
-              </p>
-              <div class="project-tags">
-                <span class="project-tag">Python</span>
-                <span class="project-tag">AI/NLP</span>
-                <span class="project-tag">RAG</span>
-                <span class="project-tag">Legal-Tech</span>
-                <span class="project-tag">FastAPI</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 2: Wardrobe AI -->
-          <div class="project-card reveal">
-            <div class="project-banner">
-              <span class="project-banner-badge" style="color: var(--accent); border-color: rgba(242,166,60,0.3); background: rgba(242,166,60,0.1);">⚡ In Dev</span>
-              <i class="fa-solid fa-shirt project-icon-large"></i>
-            </div>
-            <div class="project-body">
-              <div class="project-header">
-                <h3 class="project-title">Wardrobe AI</h3>
-                <div class="project-links">
-                  <a href="https://github.com/dhruv-sharma07" target="_blank" rel="noopener noreferrer" class="project-link-btn" title="View Source on GitHub">
-                    <i class="fa-brands fa-github"></i>
-                  </a>
-                </div>
-              </div>
-              <p class="project-desc">
-                Intelligent personal styling and smart digital wardrobe organizer. Employs multimodal vision intelligence to classify wardrobe items and suggest weather/event-tuned outfits.
-              </p>
-              <div class="project-tags">
-                <span class="project-tag">Next.js</span>
-                <span class="project-tag">TypeScript</span>
-                <span class="project-tag">Tailwind CSS</span>
-                <span class="project-tag">Prisma</span>
-                <span class="project-tag">Vision AI</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 3: Harbor Click Pipeline -->
-          <div class="project-card reveal">
-            <div class="project-banner">
-              <span class="project-banner-badge">🟢 Active</span>
-              <i class="fa-solid fa-diagram-project project-icon-large"></i>
-            </div>
-            <div class="project-body">
-              <div class="project-header">
-                <h3 class="project-title">Harbor Click Pipeline</h3>
-                <div class="project-links">
-                  <a href="https://github.com/dhruv-sharma07" target="_blank" rel="noopener noreferrer" class="project-link-btn" title="View Source on GitHub">
-                    <i class="fa-brands fa-github"></i>
-                  </a>
-                </div>
-              </div>
-              <p class="project-desc">
-                High-throughput automated data extraction and task benchmark evaluation pipeline. Containerized with Docker for reproducible execution environments.
-              </p>
-              <div class="project-tags">
-                <span class="project-tag">Python</span>
-                <span class="project-tag">Docker</span>
-                <span class="project-tag">Automation</span>
-                <span class="project-tag">PyProject</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- EDUCATION & CREDENTIALS SECTION -->
-    <section id="education" class="section">
-      <div class="container">
-        <div class="section-header reveal">
-          <div class="section-index">// 05</div>
-          <h2 class="section-title">Education & <span>Credentials</span></h2>
-          <p class="section-subtitle">Academic foundations, professional qualifications, and milestones.</p>
-        </div>
-
-        <div class="credentials-grid">
-          <!-- Education Column -->
-          <div class="edu-column reveal">
-            <h3><i class="fa-solid fa-graduation-cap" style="color: var(--accent);"></i> Education</h3>
-            
-            <div class="edu-card">
-              <h4 class="edu-title">Bachelor of Technology (B.Tech)</h4>
-              <div class="edu-institution">Computer Science & Engineering</div>
-              <div class="edu-meta">2022 – 2026 · Major in AI & Systems Architecture</div>
-            </div>
-
-            <div class="edu-card">
-              <h4 class="edu-title">Senior Secondary Education</h4>
-              <div class="edu-institution">Science & Mathematics (Physics, Chemistry, Maths, CS)</div>
-              <div class="edu-meta">CBSE Board · High Distinction</div>
-            </div>
-          </div>
-
-          <!-- Credentials / Achievements Column -->
-          <div class="cred-column reveal" id="credentials">
-            <h3><i class="fa-solid fa-certificate" style="color: var(--accent-2);"></i> Certifications & Honors</h3>
-
-            <div class="cred-card">
-              <h4 class="cred-title">Autonomous Agents & Generative AI Systems</h4>
-              <div class="cred-issuer">Advanced LLMs & Multi-Agent Swarms</div>
-              <div class="cred-date">Specialization · 2024</div>
-            </div>
-
-            <div class="cred-card">
-              <h4 class="cred-title">Full-Stack Modern Web Engineering</h4>
-              <div class="cred-issuer">React, Next.js, TypeScript & PostgreSQL Ecosystem</div>
-              <div class="cred-date">Certification · 2023</div>
-            </div>
-
-            <div class="cred-card">
-              <h4 class="cred-title">500+ Algorithmic Challenges Solved</h4>
-              <div class="cred-issuer">DSA, Graph Theory & Dynamic Programming</div>
-              <div class="cred-date">Competitive Programming</div>
-            </div>
-          </div>
-        </div>
+    <section id="about" class="about shell" aria-labelledby="about-title" data-reveal>
+      <p class="eyebrow"><span class="chapter">03</span> A bit about me</p>
+      <div>
+        <h2 id="about-title">Software that’s intuitive to use, even when the underlying problem isn’t.</h2>
+        <p>Whether architecting web applications in Next.js, building offline-ready Android apps in Kotlin, or crafting clean design systems, I focus on engineering clarity and human impact.</p>
+        <a class="button button-resume" href="assets/resume_dhruv_sharma.pdf" download="Dhruv-Sharma-Resume.pdf">
+          <svg class="icon" aria-hidden="true"><use href="#icon-down"/></svg>
+          <span>Download my complete résumé</span>
+        </a>
       </div>
     </section>
 
     <!-- CONTACT SECTION -->
-    <section id="contact" class="section">
-      <div class="container">
-        <div class="section-header reveal">
-          <div class="section-index">// 06</div>
-          <h2 class="section-title">Get In <span>Touch</span></h2>
-          <p class="section-subtitle">Have a project in mind, an opportunity, or just want to discuss AI? Let's connect!</p>
+    <section id="contact" class="contact" aria-labelledby="contact-title">
+      <div class="shell contact-inner">
+        <div data-reveal>
+          <p class="eyebrow"><span class="live-dot"></span> Available for new opportunities</p>
+          <h2 id="contact-title">Got a project?<br><span>Let’s build it together.</span></h2>
+          <p>I’m open to full-time engineering roles, mobile & web collaborations, and visionary projects. Let's talk.</p>
+          <div class="contact-actions">
+            <a class="button button-primary" id="email-link" href="mailto:dhruvsharma71105@gmail.com">
+              <span>Start a conversation</span>
+              <span class="button-orb"><svg class="icon" aria-hidden="true"><use href="#icon-diagonal"/></svg></span>
+            </a>
+            <a class="button button-resume" href="assets/resume_dhruv_sharma.pdf" download="Dhruv-Sharma-Resume.pdf">
+              <svg class="icon" aria-hidden="true"><use href="#icon-down"/></svg>
+              <span>Download Résumé</span>
+            </a>
+            <button class="button button-outline" id="copy-email" type="button" hidden>
+              <svg class="icon" aria-hidden="true"><use href="#icon-copy"/></svg>
+              <span>Copy email</span>
+            </button>
+          </div>
+          <span class="sr-only" id="copy-status" role="status"></span>
         </div>
-
-        <div class="contact-grid">
-          <div class="contact-info reveal">
-            <p class="contact-prompt">
-              I'm always open to discussing new engineering roles, AI research collaborations, consulting, or visionary projects.
-            </p>
-
-            <div class="email-copy-box">
-              <span id="emailAddress">dhruvsharma71105@gmail.com</span>
-              <button class="email-copy-btn" id="copyEmailBtn" aria-label="Copy email address">
-                <i class="fa-regular fa-copy"></i> Copy
-              </button>
+        <footer class="site-footer">
+          <div class="footer-links">
+            <div>
+              <p class="eyebrow">Disciplines</p>
+              <a href="#web-development">Web Development</a>
+              <a href="#app-development">App Development (Kotlin)</a>
+              <a href="#ui-ux-design">UI/UX Design</a>
+              <a href="#graphic-design">Graphic Design</a>
             </div>
-
-            <div class="social-links">
-              <a href="https://github.com/dhruv-sharma07" target="_blank" rel="noopener noreferrer" class="social-btn" title="GitHub">
-                <i class="fa-brands fa-github"></i>
-              </a>
-              <a href="https://linkedin.com/in/dhruv-sharma07" target="_blank" rel="noopener noreferrer" class="social-btn" title="LinkedIn">
-                <i class="fa-brands fa-linkedin-in"></i>
-              </a>
-              <a href="mailto:dhruvsharma71105@gmail.com" class="social-btn" title="Send Email">
-                <i class="fa-solid fa-envelope"></i>
-              </a>
-            </div>
-
-            <div style="margin-top: 30px;">
-              <a href="assets/Resume_Dhruv_Sharma.pdf" class="btn btn-primary" download="Resume_Dhruv_Sharma.pdf">
-                <i class="fa-solid fa-arrow-down"></i>
-                <span>Download Resume</span>
-              </a>
+            <div>
+              <p class="eyebrow">Connect</p>
+              <a href="https://github.com/dhruv-sharma07" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+              <a href="https://linkedin.com/in/dhruv-sharma07" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+              <a href="assets/resume_dhruv_sharma.pdf" download="Dhruv-Sharma-Resume.pdf">Résumé ↓</a>
             </div>
           </div>
-
-          <form class="contact-form reveal" id="contactForm">
-            <div class="form-group">
-              <label for="senderName" class="form-label">YOUR NAME</label>
-              <input type="text" id="senderName" class="form-input" placeholder="e.g. John Doe" required>
-            </div>
-
-            <div class="form-group">
-              <label for="senderEmail" class="form-label">YOUR EMAIL</label>
-              <input type="email" id="senderEmail" class="form-input" placeholder="e.g. john@example.com" required>
-            </div>
-
-            <div class="form-group">
-              <label for="senderMessage" class="form-label">MESSAGE</label>
-              <textarea id="senderMessage" class="form-textarea" placeholder="Tell me about your project or opportunity..." required></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-primary" style="width: 100%;">
-              <span>Send Message</span>
-              <i class="fa-solid fa-paper-plane"></i>
-            </button>
-
-            <div id="formStatus" class="form-status"></div>
-          </form>
-        </div>
+          <div class="footer-bottom mono">
+            <span>© 2026 Dhruv Sharma</span>
+            <a href="#home">Back to top ↑</a>
+          </div>
+        </footer>
       </div>
     </section>
   </main>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container footer-inner">
-      <div class="footer-copy">
-        © 2026 Dhruv Sharma. Engineered with curiosity, precision, and purpose.
-      </div>
-      <div class="footer-links">
-        <a href="#home">Home</a>
-        <a href="#projects">Projects</a>
-        <a href="assets/Resume_Dhruv_Sharma.pdf" download="Resume_Dhruv_Sharma.pdf">Resume</a>
-        <a href="https://github.com/dhruv-sharma07" target="_blank" rel="noopener noreferrer">GitHub</a>
-      </div>
+  <!-- INTERACTIVE ROOMS / DOORS DETAILS -->
+  <div class="rooms" id="rooms" aria-label="Project details">
+    <!-- ROOM 01: WEB DEVELOPMENT -->
+    <section id="web-development" class="room room-web shell" data-room-page>
+      <a class="button button-outline room-back" href="#projects"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg> Back to the doors</a>
+      <header class="room-heading">
+        <p class="eyebrow"><span class="chapter">01</span> Web Development</p>
+        <h2 tabindex="-1">Full-Stack & AI Web Applications</h2>
+        <p>Scalable web platforms combining resilient backend microservices with responsive, modern client architectures.</p>
+      </header>
+
+      <!-- Project 1: Vestiar / Wardrobe AI -->
+      <article class="showcase" style="margin-bottom: 2.5rem;">
+        <div class="showcase-copy">
+          <p class="eyebrow"><span class="live-dot"></span> Next.js · Vision AI · Prisma</p>
+          <h3>Vestiar / Wardrobe AI</h3>
+          <p>A smart digital wardrobe web application that uses computer vision models to classify clothing collections and pairs personalized outfits based on weather and occasions.</p>
+          <ul class="tags"><li>Next.js</li><li>TypeScript</li><li>Tailwind CSS</li><li>Prisma ORM</li><li>Vision AI</li></ul>
+          <a class="text-link" href="https://github.com/dhruv-sharma07/vestiar" target="_blank" rel="noopener noreferrer">View repository on GitHub <svg class="icon" aria-hidden="true"><use href="#icon-diagonal"/></svg></a>
+        </div>
+        <div class="showcase-art" aria-hidden="true">
+          <div class="device phone wardrobe-phone">
+            <span class="phone-notch"></span><span class="device-label">✦ Vestiar AI</span>
+            <strong>Smart Closet</strong><small>AI style curator</small>
+            <div class="closet-items">
+              <span><svg viewBox="0 0 60 60"><path d="m18 13 7-3q5 6 10 0l7 3 13 10-7 11-8-5v22H20V29l-8 5-7-11z"/></svg></span>
+              <span><svg viewBox="0 0 60 60"><path d="M19 9h22l4 43H33l-3-24-3 24H15z"/></svg></span>
+              <span><svg viewBox="0 0 60 60"><path d="m18 15 8-4h8l8 4 10 24-8 5-6-13v19H22V31l-6 13-8-5z"/></svg></span>
+              <span><svg viewBox="0 0 60 60"><path d="M10 33c10 5 17 2 20-13l8 2 4 10 12 6v9H10z"/></svg></span>
+            </div>
+          </div>
+          <span class="art-caption mono">Vestiar · Web Concept</span>
+        </div>
+      </article>
+
+      <!-- Project 2: NyayaBot -->
+      <article class="showcase">
+        <div class="showcase-copy">
+          <p class="eyebrow"><span class="live-dot"></span> Legal Tech · RAG · Python</p>
+          <h3>NyayaBot</h3>
+          <p>India’s AI Legal Advisor bridging legal accessibility across IPC, CrPC, BNS 2024, and 200+ Indian Acts using hybrid semantic vector search and statutory citations.</p>
+          <ul class="tags"><li>Python</li><li>FastAPI</li><li>Vector Search</li><li>RAG</li><li>Statutory Law</li></ul>
+          <a class="text-link" href="https://github.com/dhruv-sharma07/NyayaBot" target="_blank" rel="noopener noreferrer">View NyayaBot on GitHub <svg class="icon" aria-hidden="true"><use href="#icon-diagonal"/></svg></a>
+        </div>
+        <div class="showcase-art" aria-hidden="true" style="background: radial-gradient(ellipse, #b9ccb0, #84998d);">
+          <div class="device phone legal-phone">
+            <span class="phone-notch"></span><span class="device-label">✦ NyayaBot</span>
+            <strong>Know your<br>rights.</strong><small>Explore 200+ Acts</small>
+            <span class="device-prompt">Search statute section <b>↑</b></span>
+            <span class="device-block">LEGAL SOURCES<i></i><i></i><i></i></span>
+          </div>
+          <span class="art-caption mono">NyayaBot · UI Interface</span>
+        </div>
+      </article>
+      <a class="text-link next-room" href="#app-development">Next door: App Development (Kotlin) <svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+    </section>
+
+    <!-- ROOM 02: APP DEVELOPMENT (KOTLIN FEATURED PROJECT) -->
+    <section id="app-development" class="room room-app shell" data-room-page>
+      <a class="button button-outline room-back" href="#projects"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg> Back to the doors</a>
+      <header class="room-heading">
+        <p class="eyebrow"><span class="chapter">02</span> App Development</p>
+        <h2 tabindex="-1">Android & Kotlin Engineering</h2>
+        <p>Native Android applications engineered with Kotlin, SQLite local storage, and offline-first performance.</p>
+      </header>
+
+      <!-- EduPlay Kotlin Android Project -->
+      <article class="showcase">
+        <div class="showcase-copy">
+          <p class="eyebrow"><span class="live-dot"></span> Kotlin · Android SDK · SQLite · Offline-first</p>
+          <h3>EduPlay</h3>
+          <p>An educational Android application designed specifically for rural schools to support primary students (Classes 1–5). Features interactive gamified learning modules, student attendance management with SQLite database persistence, and a high-contrast, child-friendly colorful UI built for low-spec devices.</p>
+          <ul class="tags">
+            <li>Kotlin</li>
+            <li>Android Studio</li>
+            <li>SQLite Database</li>
+            <li>Gamified Learning</li>
+            <li>Offline First</li>
+            <li>Material Design</li>
+          </ul>
+          <a class="text-link" href="https://github.com/dhruv-sharma07/EduPlay" target="_blank" rel="noopener noreferrer">Explore EduPlay on GitHub <svg class="icon" aria-hidden="true"><use href="#icon-diagonal"/></svg></a>
+        </div>
+        <div class="showcase-art" aria-hidden="true" style="background: radial-gradient(ellipse, #a5b4fc, #6366f1);">
+          <div class="device phone eduplay-phone">
+            <span class="phone-notch"></span>
+            <span class="device-label" style="color: #4f46e5;">✦ EduPlay App</span>
+            <strong style="color: #1e1b4b; font-size: 1.45rem;">Classes 1–5<br>Learning Hub</strong>
+            <small style="color: #4338ca;">Offline SQLite Persistence</small>
+            <div class="eduplay-badges">
+              <span class="edu-badge"><i class="badge-icon">🎮</i> Math Quest</span>
+              <span class="edu-badge"><i class="badge-icon">📖</i> Reading Fun</span>
+              <span class="edu-badge"><i class="badge-icon">📝</i> Attendance</span>
+            </div>
+            <div class="device-prompt" style="background: #ffffff; color: #312e81; border: 1px solid #c7d2fe;">
+              <span>Student Sync: <b>Active</b></span>
+              <b style="background: #4f46e5;">✓</b>
+            </div>
+          </div>
+          <span class="art-caption mono">EduPlay · Kotlin Android App</span>
+        </div>
+      </article>
+      <a class="text-link next-room" href="#ui-ux-design">Next door: UI/UX Design <svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+    </section>
+
+    <!-- ROOM 03: UI/UX DESIGN -->
+    <section id="ui-ux-design" class="room room-uiux shell" data-room-page>
+      <a class="button button-outline room-back" href="#projects"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg> Back to the doors</a>
+      <header class="room-heading">
+        <p class="eyebrow"><span class="chapter">03</span> UI/UX Design</p>
+        <h2 tabindex="-1">Human-Centric Interface Architecture</h2>
+        <p>Designing digital experiences that bridge complex capabilities with intuitive, accessible, and delight-inducing interactions.</p>
+      </header>
+      <article class="showcase">
+        <div class="showcase-copy">
+          <p class="eyebrow"><span class="live-dot"></span> User Experience · Design Systems</p>
+          <h3>Thoughtful Design Systems</h3>
+          <p>From designing high-contrast, playful interfaces for young learners in rural environments (EduPlay) to frictionless search workflows for legal professionals (NyayaBot), my UX methodology balances ergonomics, WCAG accessibility, and visual clarity.</p>
+          <ul class="tags">
+            <li>User Journey Mapping</li>
+            <li>Component Design Systems</li>
+            <li>Accessibility (WCAG)</li>
+            <li>Information Hierarchy</li>
+            <li>Rapid Prototyping</li>
+          </ul>
+          <a class="text-link" href="#contact">Discuss design collaboration <svg class="icon" aria-hidden="true"><use href="#icon-diagonal"/></svg></a>
+        </div>
+        <div class="showcase-art" aria-hidden="true" style="background: radial-gradient(ellipse, #bbf7d0, #4ade80);">
+          <div class="device terminal mono uiux-canvas">
+            <div class="terminal-bar">● ● ● <span>design_system.tokens</span></div>
+            <p><b>--color-primary:</b> <span style="color:#065f46;">#10b981</span></p>
+            <p><b>--border-radius:</b> <span>16px (smooth)</span></p>
+            <p><b>--contrast-ratio:</b> <span>7.2:1 (AAA)</span></p>
+            <div class="terminal-done" style="background:#059669; color:#fff;">→ 100% Accessible</div>
+          </div>
+          <span class="art-caption mono">Design Tokens · Interface Architecture</span>
+        </div>
+      </article>
+      <a class="text-link next-room" href="#graphic-design">Next door: Graphic Design <svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+    </section>
+
+    <!-- ROOM 04: GRAPHIC DESIGN -->
+    <section id="graphic-design" class="room room-graphic shell" data-room-page>
+      <a class="button button-outline room-back" href="#projects"><svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg> Back to the doors</a>
+      <header class="room-heading">
+        <p class="eyebrow"><span class="chapter">04</span> Graphic Design</p>
+        <h2 tabindex="-1">Visual Brand Identity & Assets</h2>
+        <p>Bespoke visual brand systems, custom vector illustrations, typography hierarchies, and dark-mode aesthetics.</p>
+      </header>
+      <article class="showcase">
+        <div class="showcase-copy">
+          <p class="eyebrow"><span class="live-dot"></span> Brand Identity · Vector Illustration</p>
+          <h3>Visual Identity & Digital Craft</h3>
+          <p>Every product deserves an authentic visual voice. I create distinctive brand graphics, custom SVG glyphs, responsive layouts, and motion flourishes that give software character and memorability.</p>
+          <ul class="tags">
+            <li>Brand Identity</li>
+            <li>Vector Art & SVG</li>
+            <li>Typography Pairings</li>
+            <li>Dark-Mode Styling</li>
+            <li>Motion Physics</li>
+          </ul>
+          <a class="text-link" href="#contact">Get in touch <svg class="icon" aria-hidden="true"><use href="#icon-diagonal"/></svg></a>
+        </div>
+        <div class="showcase-art" aria-hidden="true" style="background: radial-gradient(ellipse, #fed7aa, #fb923c);">
+          <div class="device phone graphic-mockup" style="background: #2a1b14; color: #ffedd5; border-color: #7c2d12;">
+            <span class="phone-notch" style="background: #431407;"></span>
+            <span class="device-label" style="color: #fdba74;">✦ Identity</span>
+            <strong style="color: #fff; font-size: 1.6rem;">Fluid Craft & Form</strong>
+            <div style="display:flex; gap:6px; margin-top:12px;">
+              <span style="flex:1; height:32px; border-radius:6px; background:#fb923c;"></span>
+              <span style="flex:1; height:32px; border-radius:6px; background:#f97316;"></span>
+              <span style="flex:1; height:32px; border-radius:6px; background:#c2410c;"></span>
+            </div>
+            <div class="device-prompt" style="background: #431407; color: #fed7aa; margin-top:14px;">
+              <span>Brand Assets: <b>Ready</b></span>
+              <b style="background: #fb923c; color: #431407;">★</b>
+            </div>
+          </div>
+          <span class="art-caption mono">Brand Design · Identity Assets</span>
+        </div>
+      </article>
+      <a class="text-link next-room" href="#my-story">Proceed to My Story <svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+    </section>
+  </div>
+
+  <!-- Curtain transition element -->
+  <div class="door-transition" aria-hidden="true" hidden><span class="door-transition-panel"></span></div>
+
+  <!-- ===================================================================
+       MAGNIFICATION DOCK (MACOS-INSPIRED FLUID MAGNIFICATION COMPONENT)
+       Integrated with fluid spring physics, distance-based scaling,
+       animated tooltips, and one-click navigation & resume download!
+       =================================================================== -->
+  <aside class="magnification-dock-wrapper" id="dockWrapper" aria-label="Interactive macOS magnification dock">
+    <div class="magnification-dock" id="magnificationDock" role="toolbar" aria-label="Application magnification dock">
+      <!-- Item 1: Home -->
+      <a class="dock-item" href="#home" data-label="Home" aria-label="Home">
+        <span class="dock-icon"><svg class="icon"><use href="#icon-home"/></svg></span>
+        <span class="dock-label">Home</span>
+      </a>
+
+      <!-- Item 2: Web Development -->
+      <a class="dock-item" href="#web-development" data-label="Web Development" aria-label="Web Development">
+        <span class="dock-icon"><svg class="icon"><use href="#icon-code"/></svg></span>
+        <span class="dock-label">Web Dev</span>
+      </a>
+
+      <!-- Item 3: App Development (Kotlin) -->
+      <a class="dock-item" href="#app-development" data-label="App Development" aria-label="App Development (Kotlin)">
+        <span class="dock-icon"><svg class="icon"><use href="#icon-phone"/></svg></span>
+        <span class="dock-label">App Dev (Kotlin)</span>
+      </a>
+
+      <!-- Item 4: UI/UX Design -->
+      <a class="dock-item" href="#ui-ux-design" data-label="UI/UX Design" aria-label="UI/UX Design">
+        <span class="dock-icon"><svg class="icon"><use href="#icon-layout"/></svg></span>
+        <span class="dock-label">UI/UX Design</span>
+      </a>
+
+      <!-- Item 5: Graphic Design -->
+      <a class="dock-item" href="#graphic-design" data-label="Graphic Design" aria-label="Graphic Design">
+        <span class="dock-icon"><svg class="icon"><use href="#icon-brush"/></svg></span>
+        <span class="dock-label">Graphic Design</span>
+      </a>
+
+      <!-- Item 6: My Story -->
+      <a class="dock-item" href="#my-story" data-label="My story" aria-label="My story">
+        <span class="dock-icon"><svg class="icon"><use href="#icon-story"/></svg></span>
+        <span class="dock-label">My Story</span>
+      </a>
+
+      <!-- Item 7: Contact -->
+      <a class="dock-item" href="#contact" data-label="Contact" aria-label="Contact">
+        <span class="dock-icon"><svg class="icon"><use href="#icon-mail"/></svg></span>
+        <span class="dock-label">Contact</span>
+      </a>
+
+      <div class="dock-divider" aria-hidden="true"></div>
+
+      <!-- Item 8: Download Resume (Special Accent Action) -->
+      <a class="dock-item dock-item-resume" href="assets/resume_dhruv_sharma.pdf" download="Dhruv-Sharma-Resume.pdf" data-label="Download Résumé" aria-label="Download Résumé">
+        <span class="dock-icon"><svg class="icon"><use href="#icon-download"/></svg></span>
+        <span class="dock-label">Download Résumé</span>
+      </a>
     </div>
-  </footer>
+  </aside>
 
-  <!-- Floating Back to Top Button -->
-  <button id="backToTop" aria-label="Back to top">
-    <i class="fa-solid fa-arrow-up"></i>
-  </button>
-
-  <!-- Script -->
-  <script src="script.js"></script>
 </body>
 </html>
