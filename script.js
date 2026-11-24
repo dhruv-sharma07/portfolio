@@ -286,29 +286,29 @@ if (revealObserver) {
 reducedMotion.addEventListener('change', setMotion);
 document.addEventListener('visibilitychange', startRoleTimer);
 
-const story = document.querySelector('#experience');
-const milestones = Array.from(story.querySelectorAll('[data-year]'));
+const story = document.querySelector('#my-story') || document.querySelector('.story');
+const milestones = Array.from(document.querySelectorAll('.milestone[data-year]'));
 const storyYear = document.querySelector('#story-year');
 const storyCount = document.querySelector('#story-count');
 let storyIndex = -1;
 let storyFrame;
 
 function requestStoryUpdate() {
-  if (!storyFrame) storyFrame = requestAnimationFrame(updateStory);
+  if (!storyFrame && !main.hidden && milestones.length) storyFrame = requestAnimationFrame(updateStory);
 }
 
 function updateStory() {
   storyFrame = undefined;
-  if (main.hidden) return;
+  if (main.hidden || !milestones.length) return;
   const viewport = window.innerHeight;
   const index = milestones.reduce((active, milestone, position) => milestone.getBoundingClientRect().top < viewport * .57 ? position : active, 0);
-  if (index !== storyIndex) {
+  if (index !== storyIndex && milestones[index]) {
     milestones[storyIndex]?.classList.remove('is-current');
-    milestones[index].classList.add('is-current');
-    storyYear.textContent = milestones[index].dataset.year;
-    storyCount.textContent = `${String(index + 1).padStart(2, '0')} / ${String(milestones.length).padStart(2, '0')}`;
-    story.style.setProperty('--story-progress', (index + 1) / milestones.length);
-    if (storyIndex !== -1 && !reducedMotion.matches) storyYear.animate?.([{ opacity: .4, transform: 'translateY(5px)' }, { opacity: 1, transform: 'none' }], { duration: 270, easing: 'ease-out' });
+    milestones[index]?.classList.add('is-current');
+    if (storyYear) storyYear.textContent = milestones[index].dataset.year;
+    if (storyCount) storyCount.textContent = `${String(index + 1).padStart(2, '0')} / ${String(milestones.length).padStart(2, '0')}`;
+    if (story) story.style.setProperty('--story-progress', (index + 1) / milestones.length);
+    if (storyIndex !== -1 && !reducedMotion.matches) storyYear?.animate?.([{ opacity: .4, transform: 'translateY(5px)' }, { opacity: 1, transform: 'none' }], { duration: 270, easing: 'ease-out' });
     storyIndex = index;
   }
 
