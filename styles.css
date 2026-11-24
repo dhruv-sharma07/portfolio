@@ -85,10 +85,11 @@ button { color: inherit; font: inherit; cursor: pointer; }
 .hero-eyebrow { margin-bottom: 1.25rem; }
 .hero h1 { font-size: clamp(3.5rem, 6.6vw, 7rem); letter-spacing: -.062em; word-spacing: .035em; line-height: .99; text-wrap: nowrap; }
 .hero h1 span { color: var(--muted); font-weight: 700; }
-.flipbook { position: relative; isolation: isolate; perspective: 900px; width: min(100%, 35rem); height: clamp(4.1rem, 8.1vw, 7rem); margin: 2rem 0 2.3rem; transform: rotate(-3deg); }
-.book-back, .book-page { position: absolute; inset: 0; display: flex; align-items: center; padding-inline: clamp(.75rem, 2vw, 1.65rem); border-radius: .42rem .5rem .63rem .6rem; }
+.flipbook { position: relative; isolation: isolate; perspective: 900px; width: min(100%, 34rem); height: clamp(3.8rem, 7.8vw, 6.2rem); margin: 1.8rem 0 2rem; transform: rotate(-3deg); }
+.book-back, .book-page { position: absolute; inset: 0; display: flex; align-items: center; padding-inline: clamp(1rem, 2.5vw, 1.8rem); border-radius: .42rem .5rem .63rem .6rem; }
 .book-back { transform: translate(4px, 7px); background: #252c29; box-shadow: 0 9px 17px #19231d26; }
-.book-page { color: var(--book-ink); background: linear-gradient(176deg, #e9e2d4, transparent 28%), var(--book-paper); border: 1px solid #32362631; transform-origin: top; font-size: clamp(1.54rem, 3.55vw, 3.5rem); font-weight: 800; letter-spacing: -.05em; word-spacing: .045em; line-height: 1; white-space: nowrap; }
+.book-page { color: var(--book-ink); background: linear-gradient(176deg, #e9e2d4, transparent 28%), var(--book-paper); border: 1px solid #32362631; transform-origin: top; font-size: clamp(1.3rem, 3.2vw, 3rem); font-weight: 800; letter-spacing: -.03em; word-spacing: .045em; line-height: 1.1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; padding-right: 2.2rem; }
+#role-text { display: block; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .book-page::before { content: ''; position: absolute; inset: 0 .7rem auto; height: .37rem; background: radial-gradient(ellipse, #544b35 0 21%, transparent 28%) 0 0 / 8.333% 100% repeat-x; }
 .book-rings { position: absolute; inset: -.68rem .7rem auto; height: 1rem; background: radial-gradient(ellipse 3.5px 6.5px at 50% 50%, transparent 52%, #9c917b 67%, #c4c1b5 82%, #7d7769 96%, transparent 100%) 0 0 / 8.333% 100% repeat-x; pointer-events: none; }
 .role-toggle { position: absolute; right: .22rem; bottom: .18rem; display: grid; place-items: center; width: 1.5rem; height: 1.5rem; padding: 0; border: 0; border-radius: 50%; color: #5b5e50; background: var(--book-paper); }
@@ -119,7 +120,7 @@ button { color: inherit; font: inherit; cursor: pointer; }
 .door-heading .eyebrow { justify-content: center; }
 .door-heading h2 { margin: .9rem 0 .65rem; font-size: clamp(2.75rem, 5.4vw, 5.5rem); }
 .door-instruction { color: var(--muted); }
-.door-stage { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(.9rem, 4.2vw, 4.5rem); max-width: 1040px; margin: clamp(2.2rem, 6vw, 5rem) auto 0; }
+.door-stage { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(1.2rem, 5vw, 4rem); max-width: 680px; margin: clamp(2.2rem, 6vw, 5rem) auto 0; }
 .door { --door-panel: #467fa9; --door-trim: #34596d; --door-arch: #81989a; --door-halo: #6d9dc4; position: relative; display: grid; place-items: end center; min-width: 0; isolation: isolate; }
 .door-lilac { --door-panel: #827a94; --door-trim: #5c586e; --door-arch: #9f98aa; --door-halo: #b1a4cf; }
 .door-sage { --door-panel: #8ba879; --door-trim: #526f55; --door-arch: #a5b79a; --door-halo: #bdcf9e; }
@@ -257,14 +258,14 @@ button { color: inherit; font: inherit; cursor: pointer; }
   .hero-inner { grid-template-columns: 1fr; gap: 0; }
   .hero-copy { padding-block: 4.35rem 1rem; }
   .hero h1 { font-size: clamp(3.15rem, 11.8vw, 5.8rem); }
-  .flipbook { width: min(92%, 30rem); height: clamp(3.9rem, 11vw, 5.5rem); margin: 1.6rem 0 1.8rem; }
-  .book-page { font-size: clamp(1.5rem, 6.85vw, 3.05rem); }
+  .flipbook { width: min(100%, 28rem); height: clamp(3.4rem, 10vw, 4.8rem); margin: 1.4rem 0 1.6rem; }
+  .book-page { font-size: clamp(1.15rem, 5.2vw, 2.2rem); padding-inline: .9rem 2.2rem; }
   .hero-portrait { justify-self: end; width: min(87%, 28rem); margin-inline: 0; }
   .hero-portrait img { max-height: 46svh; object-position: right bottom; }
   .hero-portrait figcaption { left: auto; right: 51%; bottom: 13%; }
   .hero-strip { grid-template-columns: 1fr auto; min-height: 3.25rem; font-size: .58rem; letter-spacing: 0; }
   .hero-strip > :nth-child(2) { display: none; }
-  .door-stage { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: .55rem; max-width: 36rem; }
+  .door-stage { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .9rem; max-width: 32rem; margin-inline: auto; }
   .door-frame { max-width: 12.5rem; padding: .33rem .33rem 0; }
   .door-number { max-width: 12.5rem; }
   .door-plaque { font-size: clamp(.59rem, 2vw, .72rem); }
@@ -280,10 +281,14 @@ button { color: inherit; font: inherit; cursor: pointer; }
   .tool-grid { grid-template-columns: 1fr; }
 }
 
+@media (max-width: 520px) {
+  .door-stage { grid-template-columns: 1fr; max-width: 17rem; margin-inline: auto; }
+}
+
 @media (max-width: 360px) {
   .hero-actions .button, .contact-actions .button { font-size: .74rem; padding-inline: .65rem; }
   .hero h1 { font-size: clamp(2.65rem, 13.8vw, 3.1rem); }
-  .book-page { font-size: 7.1vw; }
+  .book-page { font-size: clamp(1rem, 5vw, 1.35rem); padding-inline: .75rem 1.8rem; }
   .door-plaque { min-width: 76%; font-size: .54rem; }
 }
 

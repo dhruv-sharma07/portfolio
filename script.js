@@ -87,8 +87,7 @@ function updateNavigation(section) {
     const active = link.hash === `#${section}` || 
       (link.hash === '#my-story' && ['experience', 'education', 'my-story', 'certifications'].includes(section)) ||
       (link.hash === '#web-development' && ['nyayabot', 'wardrobe-ai', 'vestiar', 'web-development'].includes(section)) ||
-      (link.hash === '#app-development' && ['eduplay', 'app-development'].includes(section)) ||
-      (link.hash === '#ui-ux-design' && section === 'ui-ux-design');
+      (link.hash === '#app-development' && ['eduplay', 'app-development'].includes(section));
     if (active) link.setAttribute('aria-current', roomPages.has(section) ? 'page' : 'location');
     else link.removeAttribute('aria-current');
   });
@@ -214,7 +213,7 @@ window.addEventListener('hashchange', () => {
 const roleText = document.querySelector('#role-text');
 const bookPage = roleText.parentElement;
 const roleToggle = document.querySelector('.role-toggle');
-const roles = ['Web Development', 'Android Apps (Kotlin)', 'Full-Stack Systems', 'UI/UX Design'];
+const roles = ['Full-Stack Web', 'Android Apps (Kotlin)', 'Software Engineering', 'Intelligent Systems'];
 let roleIndex = 0;
 let roleTimer;
 let roleAnimation;
